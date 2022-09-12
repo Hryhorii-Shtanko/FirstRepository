@@ -1,4 +1,4 @@
-package collections;
+package collections1;
 
 class Computer {
 	private String name;
