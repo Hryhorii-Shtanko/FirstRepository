@@ -1,23 +1,47 @@
- package collections;
+package collections;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ArrayListMethods4 {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		StringBuilder sb1 = new StringBuilder("A");
-		StringBuilder sb2= new StringBuilder("B");
-		StringBuilder sb3 = new StringBuilder("C");
-		StringBuilder sb4 = new StringBuilder("D");
-		StringBuilder[] array = {sb1,sb2,sb3,sb4};
-		List<StringBuilder>list = Arrays.asList(array);
-		System.out.println(list);
-		//array[0].append("!!!");
-		array[0] = new StringBuilder("F");
-System.out.println(list.contains("F"));
-System.out.println(list);
+		
+		
+		ArrayList<String> arrayList1= new ArrayList<>();
+		arrayList1.add("Zayr");
+		arrayList1.add("Katia");
+		arrayList1.add("Muftang");
+		arrayList1.add("Misha");
+		arrayList1.add("Kolia");
+		System.out.println(" ArrayList = "+arrayList1);
+	Object[]Array=	arrayList1.toArray();
+	String[]string = arrayList1.toArray(new String[0]);
+		for(String s:string  ) {
+			System.out.println(s);
+		
+		
+		
 	}
-
+		
+		System.out.println(Array.toString());
+//		List<String> myList= arrayList1.subList(1,4);
+//		System.out.println("SubList = "+myList);
+//		myList.add("Fioder");
+//		System.out.println("SubList = "+myList);
+//		System.out.println(" ArrayList = "+arrayList1);
+//		arrayList1.add("Cvetta"); 
+//		System.out.println(" ArrayList = "+arrayList1);
+//		
+//		
+	}
+		
+//		ArrayList<String> arrayList2= new ArrayList<>();
+//		arrayList2.add("Muftang");
+//		arrayList2.add("Katia");
+//		arrayList2.add("Igor");
+//		System.out.println(arrayList2.containsAll(arrayList1));
+//		//arrayList1.retainAll(arrayList2);
+//		System.out.println(arrayList2);
+//		
+//}
 }

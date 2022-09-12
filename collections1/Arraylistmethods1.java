@@ -2,28 +2,30 @@ package collections;
 
 import java.util.ArrayList;
 
-public class Arraylistmethods1 {
-
+public class ArrayListmethods1 {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		ArrayList<String> arrayList1= new ArrayList<>();
-		arrayList1.add("Ivan");
+		
+	
+	ArrayList<String> arrayList1= new ArrayList<>();
+	arrayList1.add("Zayr");
+	arrayList1.add("Katia");
+	arrayList1.add("Muftang");
+	arrayList1.add(1,"Misha");
+	for(String s: arrayList1) {
+		System.out.print(s + " ");
+	}
+	System.out.println();
+	
+	//ArrayList<Integer> ist2 =new ArrayList<>();
+//for(int i= 0; i < arrayList1.size(); i ++) {
+//	System.out.println(arrayList1.get(i));
+//	}
+arrayList1.set(1, "Masha");
+arrayList1.remove(0);
+arrayList1.remove(0);
+//arrayList1.remove(arrayList1);
 
-		arrayList1.add("Zayr");
-		arrayList1.add("Zayr");
-		arrayList1.add("Mariya");
-		System.out.println(arrayList1.toString());
-//		ArrayList<String> arrayList2= new ArrayList<>();
-//		arrayList2.add("!!!");
-//		arrayList2.add("???");
-//		arrayList1.addAll(1,arrayList2);
-//		System.out.println(arrayList1);
-//arrayList1.clear();
-		//System.out.println(arrayList1.indexOf("Zayr"));
-//System.out.println(arrayList1.size());
-////arrayList1.clear();
-//System.out.println(arrayList1.isEmpty());
-		System.out.println(arrayList1.contains("Nikolay"));
-System.out.println(arrayList1.contains("Mariya"));
-			}
+System.out.println(arrayList1);
+
+	}
 }
