@@ -4,7 +4,7 @@ import java.util.TreeMap;
 
 public class TreeMapEx1 {
 	public static void main(String[] args) {
-		TreeMap< Double,StudentChDTU> treemap = new TreeMap<>();
+		TreeMap<Double, StudentChDTU> treemap = new TreeMap<>();
 		// TreeMap<StudentChDTU, Double> treemap2= new TreeMap<>(new
 		// Comparator<StudentChDTU>() {
 //			@Override
@@ -27,16 +27,16 @@ public class TreeMapEx1 {
 		treemap.put(8.2, st4);
 		treemap.put(8.3, st5);
 		treemap.put(8.9, st6);
-		treemap.put(8.9, st7); 
+		treemap.put(8.9, st7);
 		treemap.put(8.1, st8);
 
 		System.out.println(treemap.containsKey(st7));
 		System.out.println(treemap.containsValue(st6));
-		
+
 		// System.out.println(treemap.get(8.2));
 		System.out.println(treemap.descendingMap());
 		System.out.println(treemap.firstEntry());
- 
+
 		// System.out.println(treemap.containsKey(st3));
 	}
 }
